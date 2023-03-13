@@ -3,7 +3,7 @@ using System.Numerics;
 using System;
 using System.Threading.Channels;
 
-namespace HW2
+namespace HW3
 {
     internal class Program
     {
@@ -30,12 +30,12 @@ namespace HW2
             Console.WriteLine(result1);
 
             #endregion
-            
+
 
             #region Solution_2
-            
+
             Console.WriteLine();
-            
+
             Console.WriteLine("Solution 2");
 
             Console.WriteLine("Input first integer:");
@@ -146,7 +146,7 @@ namespace HW2
 
             Console.WriteLine(result21);
             Console.WriteLine();
-            
+
 
             // - Write a C# program to print the odd numbers from 1 to 99. Prints one number per line.
             Console.WriteLine("- Write a C# program to print the odd numbers from 1 to 99. Prints one number per line");
@@ -194,6 +194,7 @@ namespace HW2
                         sumPrimeNumbers += testNumber;
                         countPrimeNumbers++;
                     }
+
                     break;
                 }
                 num++;
