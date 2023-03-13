@@ -1,7 +1,4 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Numerics;
-using System;
-using System.Threading.Channels;
+﻿using System;
 
 namespace HW3
 {
