@@ -127,7 +127,6 @@ namespace HW3
             Console.WriteLine();
             Console.WriteLine("- Write a C# program to check the sum of the two given integers and return true if one of the integer is 20 or if their sum is 20.");
             Console.WriteLine();
-
             Console.WriteLine("Input first integer:");
 
             var firstNumber21 = int.Parse(Console.ReadLine());
@@ -148,6 +147,7 @@ namespace HW3
             // - Write a C# program to print the odd numbers from 1 to 99. Prints one number per line.
             Console.WriteLine("- Write a C# program to print the odd numbers from 1 to 99. Prints one number per line");
             Console.WriteLine();
+
             for (var i = 1; i <= 99; i += 2)
             {
                 Console.WriteLine(i);
@@ -198,10 +198,11 @@ namespace HW3
             }
 
             Console.WriteLine($"Sum of the first 500 prime numbers: {sumPrimeNumbers}");
+            Console.WriteLine();
 
 
             // - Write a C# program and compute the sum of the digits of an integer.
-
+            Console.WriteLine("- Write a C# program and compute the sum of the digits of an integer.");
             Console.WriteLine();
             Console.Write("Input a number: ");
 
@@ -214,7 +215,7 @@ namespace HW3
                 sum += int.Parse(t.ToString());
             }
 
-            Console.WriteLine($"Sum: {sum}");
+            Console.WriteLine($"Sum of the digits of the said integer: {sum}");
         }
     }
 }
