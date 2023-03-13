@@ -2,7 +2,7 @@
 using System.Threading.Channels;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace Homework
+namespace HW2
 {
     internal class Program
     {
