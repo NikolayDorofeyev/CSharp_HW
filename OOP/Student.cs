@@ -1,15 +1,28 @@
 ﻿using System;
+using System.Xml.Linq;
 
 namespace OOP
 {
     internal class Student
     {
-        public Student(string firstName, string lastName, int age, string city )
+        public Student(string firstName, string lastName, int age, string city)
         {
             FirstName = firstName;
             LastName = lastName;
             Age = age;
             City = city;
+        }
+        public Student(string firstName, string lastName, int age, string[] coursesAttended) : this(firstName, lastName, age, "Kyiv")
+        {
+        }
+        public Student(string firstName, string lastName, string[] coursesAttended) : this(firstName, lastName, 18, "Kyiv")
+        {
+        }
+        public Student(string firstName, string[] coursesAttended) : this(firstName, "Default Last Name", 18, "Kyiv")
+        {
+        }
+        public Student(string[] coursesAttended) : this("Default First Name", "Default Last Name", 18, "Kyiv")
+        {
         }
 
         private string FirstName { get; }

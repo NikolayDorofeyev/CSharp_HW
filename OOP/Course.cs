@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace OOP
 {
@@ -10,6 +11,18 @@ namespace OOP
             TeacherName = teacherName;
             DurationInDays = durationInDays;
             NumberOfStudents = numberOfStudents;
+        }
+        public Course(string courseName, string teacherName, int durationInDays) : this(courseName, teacherName, durationInDays, 0)
+        {
+        }
+        public Course(string courseName, string teacherName) : this(courseName, teacherName, 0, 0)
+        {
+        }
+        public Course(string courseName) : this(courseName, "Default Teacher Name", 0, 0)
+        {
+        }
+        public Course() : this("Default Course Name", "Default Teacher Name", 0, 0)
+        {
         }
 
         public string CourseName { get; }

@@ -4,24 +4,24 @@
     {
         static void Main(string[] args)
         {
-            var student = new Student("Dmutro", "Petrenko", 20, "Kyiv");
+            var student1 = new Student("Dmutro", "Petrenko", 20, "Kyiv");
 
-            student.DeleteCourse("Python");
-            student.PrintInformation();
-            student.AddCourse("C#");
-            student.PrintInformation();
-            student.AddCourse("Python");
-            student.PrintInformation();
-            student.DeleteCourse("C#");
-            student.PrintInformation();
-            student.DeleteCourse("Python");
-            student.PrintInformation();
+            student1.DeleteCourse("Python");
+            student1.PrintInformation();
+            student1.AddCourse("C#");
+            student1.PrintInformation();
+            student1.AddCourse("Python");
+            student1.PrintInformation();
+            student1.DeleteCourse("C#");
+            student1.PrintInformation();
+            student1.DeleteCourse("Python");
+            student1.PrintInformation();
 
-            var course = new Course("Python", "Olena", 20, 30);
+            var course1 = new Course("Python", "Olena", 20, 30);
 
-            course.PrintInformation();
-            course.AddStudent();
-            course.PrintInformation();
+            course1.PrintInformation();
+            course1.AddStudent();
+            course1.PrintInformation();
         }
     }
 }
