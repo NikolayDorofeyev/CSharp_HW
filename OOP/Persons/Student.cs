@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Xml.Linq;
 
-namespace OOP
+namespace OOP.Persons
 {
-    internal class Student
+    internal class Student : PersonBase
     {
         public Student(string firstName, string lastName, int age, string city)
         {
@@ -32,19 +31,19 @@ namespace OOP
         public string[] CoursesAttended;
 
 
-        public void PrintInformation()
-        {
-            Console.WriteLine($"First name: {FirstName}, Last name: {LastName}, Age: {Age}, City: {City}");
-            if (CoursesAttended == null || CoursesAttended.Length == 0)
-            {
-                Console.WriteLine("Courses attended: _ ");
-            }
-            else
-            {
-                Console.WriteLine("Courses attended: " + string.Join(", ", CoursesAttended));
-            }
-            Console.WriteLine();
-        }
+        //public void PrintInformation()
+        //{
+        //    Console.WriteLine($"First name: {FirstName}, Last name: {LastName}, Age: {Age}, City: {City}");
+        //    if (CoursesAttended == null || CoursesAttended.Length == 0)
+        //    {
+        //        Console.WriteLine("Courses attended: _ ");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Courses attended: " + string.Join(", ", CoursesAttended));
+        //    }
+        //    Console.WriteLine();
+        //}
 
         public void AddCourse(string courseName)
         {
@@ -80,10 +79,10 @@ namespace OOP
             }
         }
 
-        
+
         public void DeleteCourse(string courseName)
         {
-            if (CoursesAttended == null || CoursesAttended.Length ==0)
+            if (CoursesAttended == null || CoursesAttended.Length == 0)
             {
                 return;
             }
@@ -117,6 +116,21 @@ namespace OOP
                     CoursesAttended = newArray;
                 }
             }
+        }
+
+        public override void DescribeYourself()
+        {
+            Console.WriteLine("I am a student");
+            Console.WriteLine($"First name: {FirstName}, Last name: {LastName}, Age: {Age}, City: {City}");
+            if (CoursesAttended == null || CoursesAttended.Length == 0)
+            {
+                Console.WriteLine("Courses attended: _ ");
+            }
+            else
+            {
+                Console.WriteLine("Courses attended: " + string.Join(", ", CoursesAttended));
+            }
+            Console.WriteLine();
         }
     }
 }
