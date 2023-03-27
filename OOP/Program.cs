@@ -34,14 +34,14 @@ namespace OOP
 
             teacher1.AddStudent(student1);
             teacher1.AddStudent(new Student("Oleg", "Melnyk", 21, "Lviv"));
-            Console.WriteLine($"Students mumber: {teacher1.GetStudentsNumber()}");
+            Console.WriteLine($"Students number: {teacher1.GetStudentsNumber()}");
             teacher1.PrintStudentsList();
             teacher1.DeleteStudent(student1);
             teacher1.PrintStudentsList();
 
             teacher1.AddCourse(course1);
             teacher1.PrintCourseList();
-            Console.WriteLine($"Courses mumber: {teacher1.GetCoursesNumber()}");
+            Console.WriteLine($"Courses number: {teacher1.GetCoursesNumber()}");
             teacher1.DeleteCourse(course1);
 
             student1.AddCourse(course1);
@@ -52,7 +52,7 @@ namespace OOP
 
             course1.AddStudent(student1);
             course1.AddStudent(new Student("Oleg", "Melnyk", 21, "Lviv"));
-            Console.WriteLine($"Students mumber: {teacher1.GetStudentsNumber()}");
+            Console.WriteLine($"Students number: {teacher1.GetStudentsNumber()}");
             course1.PrintStudentsList();
             course1.DeleteStudent(student1);
             course1.PrintStudentsList();
