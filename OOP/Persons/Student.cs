@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace OOP.Persons
 {
@@ -24,11 +25,13 @@ namespace OOP.Persons
         {
         }
 
-        private string FirstName { get; }
+        public string FirstName { get; }
         public string LastName { get; }
         public int Age { get; }
         public string City { get; }
-        public string[] CoursesAttended;
+        private string[] CoursesAttended;
+
+        //public List<Course> CoursesList = new List<Course>();
 
 
         //public void PrintInformation()
@@ -78,8 +81,7 @@ namespace OOP.Persons
                 CoursesAttended = new[] { courseName };
             }
         }
-
-
+        
         public void DeleteCourse(string courseName)
         {
             if (CoursesAttended == null || CoursesAttended.Length == 0)

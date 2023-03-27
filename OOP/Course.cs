@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using OOP.Persons;
 
 namespace OOP
 {
@@ -28,6 +30,7 @@ namespace OOP
         public string TeacherName { get; }
         public int DurationInDays { get; }
         public int NumberOfStudents { get; set; }
+        public readonly List<Student> StudentsList = new List<Student>();
 
         public void PrintInformation()
         {
@@ -37,6 +40,31 @@ namespace OOP
         public void AddStudent()
         {
             NumberOfStudents++;
+        }
+
+        public void AddStudent(Student student)
+        {
+            StudentsList.Add(student);
+            Console.WriteLine($"New '{student.FirstName} {student.LastName}' student successfully added!");
+        }
+
+        public void DeleteStudent(Student student)
+        {
+            StudentsList.Remove(student);
+            Console.WriteLine($"New '{student.FirstName} {student.LastName}' course successfully removed!");
+        }
+
+        public int GetStudentsNumber()
+        {
+            return StudentsList.Count;
+        }
+
+        public void PrintStudentsList()
+        {
+            foreach (var student in StudentsList)
+            {
+                Console.WriteLine($"First name: {student.FirstName}, Last name: {student.LastName}, Age: {student.Age}, City: {student.City}");
+            }
         }
     }
 }
