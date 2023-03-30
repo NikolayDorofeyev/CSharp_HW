@@ -12,13 +12,13 @@ namespace OOP.Persons
         public void AddCourse(Course course)
         {
             CoursesList.Add(course);
-            Console.WriteLine($"New '{course.CourseName}' course successfully added!");
+            Console.WriteLine($"New '{course.CourseName}' course successfully added");
         }
 
         public void DeleteCourse(Course course)
         {
             CoursesList.Remove(course);
-            Console.WriteLine($"The '{course.CourseName}' course successfully removed!");
+            Console.WriteLine($"The '{course.CourseName}' course successfully removed");
         }
         public int GetCoursesNumber()
         {
@@ -31,7 +31,7 @@ namespace OOP.Persons
             {
                 foreach (var course in CoursesList)
                 {
-                    Console.WriteLine($"Course name: {course.CourseName}, Teacher name: {course.TeacherName}, Duration: {course.DurationInDays}");
+                    Console.WriteLine($"Course name: {course.CourseName}, Teacher name: {course.CourseTeacher}, Duration: {course.DurationInDays}");
                 }
             }
             else

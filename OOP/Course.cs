@@ -6,40 +6,28 @@ namespace OOP
 {
     internal class Course
     {
-        public Course(string courseName, string teacherName, int durationInDays, int numberOfStudents)
+        public Course(string courseName, Teacher teacher, int durationInDays)
         {
             CourseName = courseName;
-            TeacherName = teacherName;
+            CourseTeacher = teacher;
             DurationInDays = durationInDays;
-            NumberOfStudents = numberOfStudents;
-        }
-        public Course(string courseName, string teacherName, int durationInDays) : this(courseName, teacherName, durationInDays, 0)
-        {
-        }
-        public Course(string courseName, string teacherName) : this(courseName, teacherName, 0, 0)
-        {
-        }
-        public Course(string courseName) : this(courseName, "Default Teacher Name", 0, 0)
-        {
-        }
-        public Course() : this("Default Course Name", "Default Teacher Name", 0, 0)
-        {
         }
 
         public string CourseName { get; }
-        public string TeacherName { get; }
+        public Teacher CourseTeacher { get; }
         public int DurationInDays { get; }
-        public int NumberOfStudents { get; set; }
         public readonly List<Student> StudentsList = new List<Student>();
+        //public int NumberOfStudents { get; set; }
 
         public void PrintInformation()
         {
-            Console.WriteLine($"Course name: {CourseName}, Teacher name: {TeacherName}, Duration (days): {DurationInDays}, Number of students: {NumberOfStudents}");
-        }
-
-        public void AddStudent()
-        {
-            NumberOfStudents++;
+            Console.WriteLine($"Course name: '{CourseName}', Teacher name: '{CourseTeacher.FirstName} {CourseTeacher.FirstName}', Duration (days): {DurationInDays}");
+            Console.WriteLine("Students list:");
+            foreach (var student in StudentsList)
+            {
+                Console.WriteLine($"First Name: {student.FirstName}, Last Name: {student.LastName}, Age: {student.Age}, City: {student.City}");
+            }
+            Console.WriteLine();
         }
 
         public void AddStudent(Student student)
