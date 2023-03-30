@@ -21,9 +21,7 @@ namespace OOP.Persons
 
         public override void DescribeYourself()
         {
-            Console.WriteLine("I am a teacher");
             Console.WriteLine($"First name: {FirstName}, Last name: {LastName}, Age: {Age}, City: {City}");
-            Console.WriteLine();
         }
 
         public void AddStudent(Student student)
