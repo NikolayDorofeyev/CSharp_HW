@@ -15,14 +15,14 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet(Name = "GetCar")]
-        public IEnumerable<Car> Get()
+        public IEnumerable<Car> GetAllCars()
         {
             var cars = new List<Car>
             {
-                new Car() { Make = "BMW", Model = "X7", Year = 2020, Color = "Black" },
-                new Car() { Make = "Honda", Model = "Accord", Year = 2019, Color = "Red" },
-                new Car() { Make = "Toyota", Model = "RAV4", Year = 2021, Color = "White" },
-                new Car() { Make = "Ford", Model = "Mustang", Year = 2022, Color = "Blue" }
+                new Car() { Id = 1, Make = "BMW", Model = "X7", Year = 2020, Engine = "Diesel" },
+                new Car() { Id = 2, Make = "Honda", Model = "Accord", Year = 2019, Engine = "Petrol" },
+                new Car() { Id = 3, Make = "Toyota", Model = "RAV4", Year = 2021, Engine = "Hybrid" },
+                new Car() { Id = 4, Make = "Ford", Model = "Focus", Year = 2022, Engine = "Electric" }
             };
 
             return cars;
