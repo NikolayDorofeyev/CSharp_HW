@@ -37,3 +37,13 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
+var del = new MyDelegate(Print);
+del.Invoke("Test1");
+static void Print(string msg)
+{
+    Console.WriteLine(msg);
+}
+
+public delegate void MyDelegate(string msg);
