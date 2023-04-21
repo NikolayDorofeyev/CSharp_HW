@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Part2_HW1", "Part2_HW1\Part2_HW1.csproj", "{0B74EB0D-027F-4B5D-92BB-00E6402BEB6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication_Razor", "WebApplication_Razor\WebApplication_Razor.csproj", "{68071AE6-7A1D-4FAA-998A-59878CAC8578}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication_Razor", "WebApplication_Razor\WebApplication_Razor.csproj", "{68071AE6-7A1D-4FAA-998A-59878CAC8578}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

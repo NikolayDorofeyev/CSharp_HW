@@ -1,0 +1,23 @@
+﻿@page
+@model WebApplication_Razor.Pages.MyHobbiesModel
+@{
+    ViewData["Title"] = "My Hobbies";
+}
+
+<div class="text-center">
+    <h1 class="display-4">My Hobbies</h1>
+</div>
+
+@foreach (var hobby in Model.HobbyList)
+{
+    <div>
+        <a asp-page="/Hobby" asp-route-id="@hobby.Id" title="Hobby @hobby.Name">
+            <div>
+                <h3>@hobby.Name</h3>
+            </div>
+        </a>
+        <div>
+            <p>@hobby.Description</p>
+        </div>
+    </div>
+}
