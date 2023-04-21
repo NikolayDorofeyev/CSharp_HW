@@ -1,0 +1,11 @@
+﻿@page "{Id:int}"
+@model WebApplication_Razor.Pages.HobbyModel
+@{
+    ViewData["Title"] = "My Hobby";
+}
+
+<div class="text-center">
+    <h1>My Hobby: @Model.Hobby.Name</h1>
+    <h1>Id: @Model.Id</h1>
+</div>
+
