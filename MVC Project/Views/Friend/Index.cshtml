@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Friend>
+
+@{
+    ViewBag.Title = "Friends";
+}
+
+<h2>Friends List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FriendName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Place)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FriendName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Place)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.FriendID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.FriendID })
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
