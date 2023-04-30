@@ -2,7 +2,75 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+	<style>
+		.text-h2 {
+      text-transform:capitalize;
+      font-size:50px;
+      text-align:center
+		}
+		.text-h3 {
+      font-size:30px;
+      text-align:center
+		}
+		.text1 {
+      font-size:30px;
+      text-align:center
+		}
+		.tiles-list-item {
+      padding: 30px;
+      background-color:#ffffff
+		}
+		.tiles-list {display: flex}
+    .button {background-color:#000000}
+    .text-p {
+      text-align: center;
+      font-size: 20px
+    }
+
+
+	</style
+  </head>
+  <body style="background-color:#f7c600">
+    <h1 class="text-h2">Some text in the header</h1>
+    <p class="text1">Some long text some long text some long text some long text some long text<br>some long text some long text some long text </p>
+    <div class="tiles-list-item" style="background-color: initial;"></div>
+    <div class="tiles-list">
+      <div class="tiles-list-item" style="background-color: initial;"></div>
+      <div class="tiles-list-item">
+        <p style="text-align: center">
+          <img src="images/images_2.png" width="200">
+        </p>
+        <h2 class="text-h3">International Shipping</h2>
+        <p class="text-p">Some very, very long text some very, very long text some very, very long text some very, very long text some very very long text some very very long text.</p>
+      </div>
+      <div class="tiles-list-item" style="background-color: initial;"></div>
+      <div class="tiles-list-item">
+        <p style="text-align: center">
+          <img src="images/images_1.png" width="200">
+        </p>
+        <h2 class="text-h3">Access & Discover</h2>
+        <p class="text-p">Some very, very long text some very, very long text some very, very long text some very, very long text some very, very long text some very, very long text some very, very long text some very, very long text.</p>
+      </div>
+      <div class="tiles-list-item" style="background-color: initial;"></div>
+      <div class="tiles-list-item">
+        <p style="text-align: center">
+          <img src="images/images_3.png" width="200">
+        </p>
+        <h2 class="text-h3">Personalized Service</h2>
+        <p class="text-p">Some very, very long text some very, very long text some very, very long text some very, very long text some very, very long text.</p>
+      </div>
+      <div class="tiles-list-item" style="background-color: initial;"></div>
+    </div>
+    <div style="display: flex;margin-top: 40px;flex-wrap: nowrap;justify-content: center;">
+      <a href="https://" class="button" style="font-size: 25px;text-transform: uppercase;text-decoration: none;color: white;padding: 20px" >learn more</a>
+    </div>
+
+
+  </body>
+</html>
+
